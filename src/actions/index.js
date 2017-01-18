@@ -4,7 +4,7 @@ import {browserHistory} from 'react-router';
 import {AUTH_USER,AUTH_ERROR,LOGOUT_USER,FETCH_POST,ADD_POST,POST_SHOW,
     FETCH_POST_SUCCESS,POST_SHOW_SUCCESS,VOTE_POLL,
 USER_INFO_SUCCESS,USER_INFO} from './types';
-const ROOT_URL = 'http://voting-app.dev';
+const ROOT_URL = 'https://md-voting-api.herokuapp.com';
 export function loginUser({email,password}){
   return function(dispatch){
       axios.post(`${ROOT_URL}/api/login`,{email,password})
